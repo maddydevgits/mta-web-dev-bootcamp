@@ -1,0 +1,1 @@
+alert('MTA DEV Bootcamp is going good');

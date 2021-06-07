@@ -1,0 +1,27 @@
+<!-- Paragraph should display in black color, but when button
+     is pressed the paragraph should display in green color -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Button Demo </title>
+		<script>
+			// function definition
+			function changeColor() {
+				document.getElementById("abcd").style.color="green";
+			}
+			function blackColor() {
+				document.getElementById("abcd").style.color="black";
+			}
+		</script>
+	</head>
+	<body>
+		<p id="abcd">madBlocks MTA Web Dev Bootcamp</p>
+		<p>madBlocks Academy </p>
+		<button type="button" onclick="changeColor()">
+		Click to Change</button>
+		<button type="button" onclick="blackColor()">
+		Reset</button>
+	</body>
+</html>
+
