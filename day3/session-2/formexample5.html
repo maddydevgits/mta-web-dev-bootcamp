@@ -1,0 +1,34 @@
+<!-- Drop Down -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Dropdown Demo</title>
+		<style>
+			p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<label>Choose your favoruite City</label>
+		<select id="city">
+			<option>Hyderabad</option>
+			<option>Vijayawada</option>
+			<option>Chennai</option>
+			<option>New Delhi</option>
+			<option>Bangalore</option>
+			<option>Mumbai</option>
+			<option>Kolkata</option>
+		</select>
+		<button onclick="readData()">Submit</button>
+		<p id="result"></p>
+		<script>
+			function readData() {
+				var c=document.getElementById('city').value;
+				document.getElementById('result').innerHTML=c;
+			}
+		</script>
+	</body>
+</html>

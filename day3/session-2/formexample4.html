@@ -1,0 +1,43 @@
+<!-- Checkboxes -->
+
+<!Doctype html>
+<html>
+	<head>
+		<style>
+			p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>Your Favourite Sport:</h3>
+		<input type="checkbox" id="cricket" value="cricket" />Cricket
+		<input type="checkbox" id="football" value="football" />Football 
+		<br/><br/>
+		<button onclick="readData()">Submit</button>
+		<p id="result"></p>
+
+		<script>
+			function readData() {
+				var cricket=document.getElementById('cricket');
+				var football=document.getElementById('football');
+				var res;
+
+				console.log(cricket.checked,football.checked);
+
+				if(cricket.checked == true && football.checked == true) {
+					res='Circket, Football';
+				} else if(cricket.checked == false && football.checked == true) {
+					res='Football only';
+				} else if(cricket.checked == true && football.checked == false) {
+					res='Cricket Only';
+				} else {
+					res = 'None';
+				}
+
+				document.getElementById('result').innerHTML=res;
+
+			}
+		</script>
+	</body>
+</html>

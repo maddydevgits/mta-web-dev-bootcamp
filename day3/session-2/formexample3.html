@@ -1,0 +1,30 @@
+<!-- Radio Button and Check Box -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Radio Button and Check Box Demo</title>
+	</head>
+	<body>
+		<form>
+			<label for="gender">Gender</label>
+			<input type="radio" id="gender" name="gender" value="Male"/>Male
+			<input type="radio" id="gender" name="gender" value="Female"/>Female
+			<br/><br/>
+
+			<button onclick="readData()">Submit</button>
+		</form>
+		<script>
+			function readData() {
+
+				var a = document.getElementsByName('gender');
+				for(i=0;i<a.length;i++) {
+					if(a[i].checked)
+						alert('Male');
+					else
+						alert('Female');
+				}
+			}
+		</script>
+	</body>
+</html>

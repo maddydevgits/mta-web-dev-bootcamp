@@ -1,0 +1,31 @@
+<!-- Data List Demo -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data List Demo</title>
+		<style>
+			p {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<label>Enter your favourite Cricket Player:</label> <br/>
+		<input type="text" id="fav" list="cplayers">
+		<datalist id="cplayers">
+			<option value="Sachin Tendulkar" />
+			<option value="MS Dhoni" />
+			<option value="Virat Kohli" />
+			<option value="RG Sharma" />
+		</datalist> <br/><br/>
+		<button onclick="readData()">Submit</button>
+		<p id="result"></p>
+		<script>
+			function readData() {
+				var fav = document.getElementById('fav').value;
+				document.getElementById('result').innerHTML=fav;
+			}
+		</script>
+	</body>
+</html>
