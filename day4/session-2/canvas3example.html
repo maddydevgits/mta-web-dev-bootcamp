@@ -1,0 +1,18 @@
+<!-- Name on Canvas -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Name on Canvas</title>
+	</head>
+	<body>
+		<canvas id="c1" width="300" height="100" style="border:1px solid black">
+		</canvas>
+		<script>
+			var c=document.getElementById('c1');
+			cursor=c.getContext('2d');
+			cursor.font="30px Arial";
+			//cursor.fillText("Hello Madblocks",10,50);
+			cursor.strokeText("Hello Madblocks",10,50);
+		</script>
+	</body>
+</html>

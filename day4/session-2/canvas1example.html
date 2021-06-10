@@ -1,0 +1,17 @@
+<!-- Create a Canvas -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Canvas</title>
+	</head>
+	<body>
+		<canvas id="c1" width="300" height="200" style="border: 2px solid red;">
+		</canvas>
+		<script>
+			var c=document.getElementById('c1');
+			cursor=c.getContext("2d");
+			cursor.fillStyle="blue";
+			cursor.fillRect(0,0,200,100);
+		</script>
+	</body>
+</html>

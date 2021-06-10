@@ -1,0 +1,19 @@
+<!-- Create a Line -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Line Canvas Demo</title>
+	</head>
+	<body>
+		<canvas id="c1" width="200" height="100" style="border:1px solid black">
+		</canvas>
+		<script>
+			var c=document.getElementById('c1');
+			cursor=c.getContext('2d');
+			cursor.moveTo(0,0);
+			cursor.lineTo(200,100);
+			cursor.stroke();
+		</script>
+	</body>
+</html>

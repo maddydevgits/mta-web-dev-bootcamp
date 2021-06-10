@@ -1,0 +1,36 @@
+<!-- Video Player -->
+
+<!DOCTYPE html>
+<html>
+	<body>
+		<div style="text-align: center;">
+			<button onclick="pausePlay()">Pause/Play</button>
+			<button onclick="big()">Big</button>
+			<button onclick="small()">Small</button>
+			<button onclick="normal()">Normal</button>
+			<br/><br/>
+			<video id="v1" width="450">
+				<source src="resources/video.mp4" type="video/mp4" />
+			</video>
+		</div>
+		<script>
+			var vPlayer = document.getElementById('v1');
+			function pausePlay() {
+				if(vPlayer.paused) {
+					vPlayer.play();
+				} else {
+					vPlayer.pause();
+				}
+			}
+			function big() {
+				vPlayer.width=600;
+			}
+			function small() {
+				vPlayer.width=300;
+			}
+			function normal() {
+				vPlayer.width=450;
+			}
+		</script>
+	</body>
+</html>

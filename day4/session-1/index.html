@@ -1,0 +1,54 @@
+<!-- Contact Form -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Contact Form</title>
+		<style>
+			p {
+				color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Contact Form</h1>
+		<form action="/web-dev/reg/db_api.php" method="POST" target="_blank">
+			<label style="color:red">Enter your name: </label>
+			<input type="text" id="uname" name="uname" />
+			<br/><br/>
+
+			<label style="color:red">Enter your email id: </label>
+			<input type="email" id="emailid" name="emailid" />
+			<br/><br/>
+
+			<label style="color:red">Enter your subject: </label>
+			<input type="text" id="subject" name="subject" />
+			<br/><br/>
+
+			<label style="color:red">Enter your message:</label>
+			<textarea id="message" name="message" rows=7 cols=40>
+				
+			</textarea>
+			<br/><br/>
+			<input type="submit" />
+		</form>	
+			<!--<button onclick="readData()">Submit</button>
+			<p id="result"></p>		-->
+
+			<script>
+				function readData() {
+
+					var name=document.getElementById('uname').value;
+					var email=document.getElementById('emailid').value;
+					var subject=document.getElementById('subject').value;
+					var message=document.getElementById('message').value;
+
+					var dataString='Name: ' + name + 'Email: ' + email +
+					'Subject: ' + subject + 'Message: ' + message;
+
+					document.getElementById('result').innerHTML=dataString;
+				}
+			</script>
+	</body>
+</html>
