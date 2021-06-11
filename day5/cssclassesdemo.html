@@ -1,0 +1,37 @@
+<!-- CSS Classes Demo -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>CSS Classes Demo</title>
+		<style>
+			.abc {
+				text-align: center;
+			}
+
+			.def {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="abc">
+			Web Dev Bootcamp is success
+		</p>
+		<p id="p1" class="abc def">
+			Today is the last day of Web Dev Bootcamp
+		</p>
+
+		<button onclick="toggleName()">Toggle</button>
+		<button onclick="resetName()">Reset</button>
+		<script>
+			function toggleName() {
+				document.getElementById('p1').innerHTML='This is the last session';
+			}
+			function resetName() {
+				document.getElementById('p1').innerHTML='Today is the last day of Web Dev Bootcamp';
+			}
+		</script>
+	</body>
+</html>
